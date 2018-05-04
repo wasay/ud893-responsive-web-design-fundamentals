@@ -1,0 +1,158 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__bar {
+    display: none;
+    font-size: 16px;
+}
+
+.show{
+    display:block;
+}
+.hide {
+    display:none;
+}
+
+.nav__bar__link{
+text-decoration:none;
+display:none;
+}
+
+.nav__bar__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+.header__inner, .nav, main, .hero, .top-news, .scores, .weather {
+    width: 100%;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 1;
+}
+
+/* Extra Small devices (landscape phones, 576px and below)*/
+@media (max-width: 575px) {
+    .hero {
+        order: 1;
+    }
+    .top-news {
+        order: 2;
+    }
+    .scores {
+        order: 3;
+    }
+    .weather {
+        order: 4;
+    }
+    .recent-news {
+        order: 0;
+    }
+
+    #drawer {
+        display: none;
+    }
+    .nav__bar__link {
+        display: inline;
+        float:right;
+    }
+
+    .header__logo
+    {
+        height: 42px;
+    }
+
+    .header__title {
+        font-size: 2em;
+        margin-top:15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero {
+        order: 0;
+    }
+    .top-news {
+        order: 1;
+    }
+    .scores {
+        order: 2;
+    }
+    .weather {
+        order: 3;
+    }
+    .recent-news {
+        order: 4;
+    }
+
+    .header__title {
+        font-size: 3em;
+    }
+}
+
+/* Medium / Large / Extra large devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .hero {
+        order: 3;
+        width:50%;
+        float:left;
+    }
+    .top-news {
+        order: 2;
+        width:50%;
+        float:left;
+    }
+    .scores {
+        order: 1;
+        width:50%;
+        float:left;
+    }
+    .weather {
+        order: 0;
+        width:50%;
+        float:left;
+    }
+    .recent-news {
+        order: 4;
+        width:100%;
+        float:left;
+    }
+
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .hero {
+        order: 3;
+        width:50%;
+        float:left;
+    }
+    .top-news {
+        order: 2;
+        width:50%;
+        float:left;
+    }
+    .scores {
+        order: 1;
+        width:50%;
+        float:left;
+    }
+    .weather {
+        order: 0;
+        width:50%;
+        float:left;
+    }
+    .recent-news {
+        order: 4;
+        width:100%;
+        float:left;
+    }
+}
+
