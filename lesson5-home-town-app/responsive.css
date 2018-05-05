@@ -11,16 +11,30 @@
     order: 10;
 }
 
-@media screen and (max-width: 549px) {
-    .header__logo {
-        height: 48px;
-        margin-right: 0.5em;
+@media screen and (max-width: 400px) {
+
+    .header__title {
+        margin-left: 0;
+        font-size: 1.5em;
+        vertical-align: bottom;
     }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 549px) {
 
     .header__title {
         margin-left: 0;
         font-size: 2em;
         vertical-align: bottom;
+    }
+
+}
+
+@media screen and (max-width: 549px) {
+    .header__logo {
+        height: 48px;
+        margin-right: 0.5em;
     }
 
     .nav {
