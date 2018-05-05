@@ -112,3 +112,69 @@ min-device-width    max-device-width
     text-align: center;
     width: 100%;
 }
+
+
+/*
+force table to act like div
+
+<table>
+    <thead>
+        <tr>
+            <th>Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Team">Tiger</td>
+        </tr>
+    </tbody>
+</table>
+
+@media screen and (max-width: 500px)
+{
+    table, thead, tbody, tfoot, tr, th, td
+    {
+        display: block;
+    }
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-th);
+        font-weight: bold;
+    }
+}
+
+// https://css-tricks.com/responsive-data-table-roundup/
+
+// https://codepen.io/JohnMav/pen/Mazrwm
+
+// contained table
+div.contained_table {
+    width:100%;
+    overflow-x: auto;
+}
+
+<div class="contained_table">
+    <table></table>
+</div>
+
+// ideal measure
+45 charactors per line to 90 characters per line
+
+// consensus for web
+65 charactors
+
+// good font size
+font-size: 16 px;
+line-height: 1.2em;
+
+*/
