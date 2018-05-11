@@ -178,3 +178,11 @@ font-size: 16 px;
 line-height: 1.2em;
 
 */
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
